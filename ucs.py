@@ -23,7 +23,7 @@ def uniform_cost_search(road_network, start, goal):
                 g_n[neighbor] = temp
                 heapq.heappush(priorityQ, (temp, neighbor))
 
-    return None
+    return []
 
 # print Final path
 def reconstruct_path(originating_city, curr_city):
