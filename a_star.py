@@ -22,23 +22,23 @@ class AStar:
         priorityQ = []
         heapq.heappush(priorityQ, (0, start))
         came_from = {}
-        g_score = {start: 0}
-        f_score = {start: self.haversine(start, goal)}
+        g_n = {start: 0}
+        f_n = {start: self.haversine(start, goal)}
 
         while priorityQ:
-            current_f_score, current = heapq.heappop(priorityQ)
-            self.steps.append((g_score.copy(), f_score.copy(), came_from.copy(), priorityQ.copy()))
+            current_f_n, current = heapq.heappop(priorityQ)
+            self.steps.append((g_n.copy(), f_n.copy(), came_from.copy(), priorityQ.copy()))
 
             if current == goal:
                 return self.reconstruct_path(came_from, current)
 
             for neighbor, distance in self.roadmap.get_neighbors(current):
-                tentative_g_score = g_score[current] + distance
-                if neighbor not in g_score or tentative_g_score < g_score[neighbor]:
+                tentative_g_n = g_n[current] + distance
+                if neighbor not in g_n or tentative_g_n < g_n[neighbor]:
                     came_from[neighbor] = current
-                    g_score[neighbor] = tentative_g_score
-                    f_score[neighbor] = tentative_g_score + self.haversine(neighbor, goal)
-                    heapq.heappush(priorityQ, (f_score[neighbor], neighbor))
+                    g_n[neighbor] = tentative_g_n
+                    f_n[neighbor] = tentative_g_n + self.haversine(neighbor, goal)
+                    heapq.heappush(priorityQ, (f_n[neighbor], neighbor))
 
         return None
 
