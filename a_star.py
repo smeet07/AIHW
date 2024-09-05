@@ -19,33 +19,40 @@ class AStar:
         return R * distance
 
     def findPath(self, start, goal):
+        # priority queue to maintain the next city to consider
         priorityQ = []
         heapq.heappush(priorityQ, (0, start))
-        came_from = {}
+        originating_city = {}
+        # intilialize g(n), f(n)
         g_n = {start: 0}
         f_n = {start: self.haversine(start, goal)}
 
         while priorityQ:
             current_f_n, current = heapq.heappop(priorityQ)
-            self.steps.append((g_n.copy(), f_n.copy(), came_from.copy(), priorityQ.copy()))
+            self.steps.append((g_n.copy(), f_n.copy(), originating_city.copy(), priorityQ.copy()))
 
+            # check if the current city is the goal
             if current == goal:
-                return self.reconstruct_path(came_from, current)
+                return self.reconstruct_path(originating_city, current)
 
-            for neighbor, distance in self.roadmap.get_neighbors(current):
+            # go through neighbors
+            for next_city, distance in self.roadmap.get_next_citys(current):
                 tentative_g_n = g_n[current] + distance
-                if neighbor not in g_n or tentative_g_n < g_n[neighbor]:
-                    came_from[neighbor] = current
-                    g_n[neighbor] = tentative_g_n
-                    f_n[neighbor] = tentative_g_n + self.haversine(neighbor, goal)
-                    heapq.heappush(priorityQ, (f_n[neighbor], neighbor))
+                if next_city not in g_n or tentative_g_n < g_n[next_city]:
+                    originating_city[next_city] = current
+                    # calculate g(n)
+                    g_n[next_city] = tentative_g_n
+                    # calculate f(n)
+                    f_n[next_city] = tentative_g_n + self.haversine(next_city, goal)
+                    heapq.heappush(priorityQ, (f_n[next_city], next_city))
 
         return None
 
-    def reconstruct_path(self, came_from, current):
-        total_path = [current]
-        while current in came_from:
-            current = came_from[current]
-            total_path.append(current)
-        total_path.reverse()
-        return total_path
+    # print the final path output
+    def reconstruct_path(self, originating_city, current):
+        final_path = [current]
+        while current in originating_city:
+            current = originating_city[current]
+            final_path.append(current)
+        final_path.reverse()
+        return final_path

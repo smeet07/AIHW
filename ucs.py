@@ -1,30 +1,30 @@
 import heapq
 
 def uniform_cost_search(road_network, start, goal):
-    open_set = []
-    heapq.heappush(open_set, (0, start))
-    came_from = {}
-    g_score = {start: 0}
+    priorityQ = []
+    heapq.heappush(priorityQ, (0, start))
+    originating_city = {}
+    g_n = {start: 0}
 
-    while open_set:
-        current_g_score, current = heapq.heappop(open_set)
+    while priorityQ:
+        curr_city_g_n, curr_city = heapq.heappop(priorityQ)
 
-        if current == goal:
-            return reconstruct_path(came_from, current)
+        if curr_city == goal:
+            return reconstruct_path(originating_city, curr_city)
 
-        for neighbor, distance in road_network.get_neighbors(current):
-            tentative_g_score = g_score[current] + distance
-            if neighbor not in g_score or tentative_g_score < g_score[neighbor]:
-                came_from[neighbor] = current
-                g_score[neighbor] = tentative_g_score
-                heapq.heappush(open_set, (tentative_g_score, neighbor))
+        for neighbor, distance in road_network.get_neighbors(curr_city):
+            temp = g_n[curr_city] + distance
+            if neighbor not in g_n or temp < g_n[neighbor]:
+                originating_city[neighbor] = curr_city
+                g_n[neighbor] = temp
+                heapq.heappush(priorityQ, (temp, neighbor))
 
     return None
 
-def reconstruct_path(came_from, current):
-    total_path = [current]
-    while current in came_from:
-        current = came_from[current]
-        total_path.append(current)
-    total_path.reverse()
-    return total_path
+def reconstruct_path(originating_city, curr_city):
+    final_path = [curr_city]
+    while curr_city in originating_city:
+        curr_city = originating_city[curr_city]
+        final_path.append(curr_city)
+    final_path.reverse()
+    return final_path
