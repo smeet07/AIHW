@@ -1,0 +1,131 @@
+Exploring node: cleveland, depth: 0, f_limit: inf
+Exploring node: cleveland, depth: 0, f_limit: inf
+Neighbor: buffalo, g(n): 191.0, h(n): 3043.3109008122974, f(n): 3234.3109008122974
+Neighbor: philadelphia, g(n): 476.0, h(n): 3228.860799176337, f(n): 3704.860799176337
+Neighbor: dayton, g(n): 214.0, h(n): 2535.05191937429, f(n): 2749.05191937429
+Exploring node: dayton, depth: 1, f_limit: 3234.3109008122974
+Neighbor: indianapolis, g(n): 379.0, h(n): 2372.7340915773225, f(n): 2751.7340915773225
+Exploring node: indianapolis, depth: 2, f_limit: 3234.3109008122974
+Neighbor: kansasCity, g(n): 881.0, h(n): 1660.497375611988, f(n): 2541.497375611988
+Exploring node: kansasCity, depth: 3, f_limit: 3234.3109008122974
+Neighbor: tulsa, g(n): 1130.0, h(n): 1443.6486504332981, f(n): 2573.648650433298
+Neighbor: wichita, g(n): 1071.0, h(n): 1377.6633601685865, f(n): 2448.663360168586
+Exploring node: wichita, depth: 4, f_limit: 2573.648650433298
+Neighbor: denver, g(n): 1594.0, h(n): 992.3553190364637, f(n): 2586.3553190364637
+Neighbor: omaha, g(n): 1406.0, h(n): 1662.7196033814105, f(n): 3068.7196033814107
+Exploring node: tulsa, depth: 4, f_limit: 2586.3553190364637
+Neighbor: ftWorth, g(n): 1444.0, h(n): 1275.3233919767104, f(n): 2719.3233919767104
+Neighbor: memphis, g(n): 1543.0, h(n): 1961.88673541097, f(n): 3504.88673541097
+Exploring node: wichita, depth: 4, f_limit: 2719.3233919767104
+Neighbor: denver, g(n): 1594.0, h(n): 992.3553190364637, f(n): 2586.3553190364637
+Neighbor: omaha, g(n): 1406.0, h(n): 1662.7196033814105, f(n): 3068.7196033814107
+Exploring node: denver, depth: 5, f_limit: 2719.3233919767104
+Neighbor: dallas, g(n): 2386.0, h(n): 1325.687400768776, f(n): 3711.6874007687757
+Neighbor: provo, g(n): 2060.0, h(n): 895.3486698720358, f(n): 2955.3486698720358
+Neighbor: santaFe, g(n): 1980.0, h(n): 597.6538391258358, f(n): 2577.653839125836
+Exploring node: santaFe, depth: 6, f_limit: 2719.3233919767104
+Neighbor: elPaso, g(n): 2308.0, h(n): 426.8735896242545, f(n): 2734.8735896242547
+Exploring node: tulsa, depth: 4, f_limit: 2734.8735896242547
+Neighbor: ftWorth, g(n): 1444.0, h(n): 1275.3233919767104, f(n): 2719.3233919767104
+Neighbor: memphis, g(n): 1543.0, h(n): 1961.88673541097, f(n): 3504.88673541097
+Exploring node: ftWorth, depth: 5, f_limit: 2734.8735896242547
+Exploring node: wichita, depth: 4, f_limit: 3234.3109008122974
+Neighbor: denver, g(n): 1594.0, h(n): 992.3553190364637, f(n): 2586.3553190364637
+Neighbor: omaha, g(n): 1406.0, h(n): 1662.7196033814105, f(n): 3068.7196033814107
+Exploring node: denver, depth: 5, f_limit: 3068.7196033814107
+Neighbor: dallas, g(n): 2386.0, h(n): 1325.687400768776, f(n): 3711.6874007687757
+Neighbor: provo, g(n): 2060.0, h(n): 895.3486698720358, f(n): 2955.3486698720358
+Neighbor: santaFe, g(n): 1980.0, h(n): 597.6538391258358, f(n): 2577.653839125836
+Exploring node: santaFe, depth: 6, f_limit: 2955.3486698720358
+Neighbor: elPaso, g(n): 2308.0, h(n): 426.8735896242545, f(n): 2734.8735896242547
+Exploring node: elPaso, depth: 7, f_limit: 2955.3486698720358
+Neighbor: sanAntonio, g(n): 2888.0, h(n): 1223.2112311787234, f(n): 4111.211231178723
+Neighbor: tucson, g(n): 2628.0, h(n): 0.0, f(n): 2628.0
+Exploring node: tucson, depth: 8, f_limit: 2955.3486698720358
+Exploring node: cleveland, depth: 0, f_limit: inf
+Exploring node: cleveland, depth: 0, f_limit: inf
+Neighbor: buffalo, g(n): 191.0, h(n): 2906.415470326184, f(n): 3097.415470326184
+Neighbor: philadelphia, g(n): 476.0, h(n): 3054.7981718168244, f(n): 3530.7981718168244
+Neighbor: dayton, g(n): 214.0, h(n): 2450.284832709985, f(n): 2664.284832709985
+Exploring node: dayton, depth: 1, f_limit: 3097.415470326184
+Neighbor: indianapolis, g(n): 379.0, h(n): 2304.0427903604973, f(n): 2683.0427903604973
+Exploring node: indianapolis, depth: 2, f_limit: 3097.415470326184
+Neighbor: kansasCity, g(n): 881.0, h(n): 1638.7282416599137, f(n): 2519.7282416599137
+Exploring node: kansasCity, depth: 3, f_limit: 3097.415470326184
+Neighbor: tulsa, g(n): 1130.0, h(n): 1427.1018852523434, f(n): 2557.1018852523434
+Neighbor: wichita, g(n): 1071.0, h(n): 1364.8986496200114, f(n): 2435.8986496200114
+Exploring node: wichita, depth: 4, f_limit: 2557.1018852523434
+Neighbor: denver, g(n): 1594.0, h(n): 990.6170085100302, f(n): 2584.6170085100302
+Neighbor: omaha, g(n): 1406.0, h(n): 1645.0988105615515, f(n): 3051.0988105615515
+Exploring node: tulsa, depth: 4, f_limit: 2584.6170085100302
+Neighbor: ftWorth, g(n): 1444.0, h(n): 1262.7629739245394, f(n): 2706.7629739245394
+Neighbor: memphis, g(n): 1543.0, h(n): 1918.1568226624936, f(n): 3461.1568226624936
+Exploring node: wichita, depth: 4, f_limit: 2706.7629739245394
+Neighbor: denver, g(n): 1594.0, h(n): 990.6170085100302, f(n): 2584.6170085100302
+Neighbor: omaha, g(n): 1406.0, h(n): 1645.0988105615515, f(n): 3051.0988105615515
+Exploring node: denver, depth: 5, f_limit: 2706.7629739245394
+Neighbor: dallas, g(n): 2386.0, h(n): 1311.6004429119898, f(n): 3697.60044291199
+Neighbor: provo, g(n): 2060.0, h(n): 895.3245160904029, f(n): 2955.324516090403
+Neighbor: santaFe, g(n): 1980.0, h(n): 596.8855883933252, f(n): 2576.885588393325
+Exploring node: santaFe, depth: 6, f_limit: 2706.7629739245394
+Neighbor: elPaso, g(n): 2308.0, h(n): 426.40101595166715, f(n): 2734.401015951667
+Exploring node: tulsa, depth: 4, f_limit: 2734.401015951667
+Neighbor: ftWorth, g(n): 1444.0, h(n): 1262.7629739245394, f(n): 2706.7629739245394
+Neighbor: memphis, g(n): 1543.0, h(n): 1918.1568226624936, f(n): 3461.1568226624936
+Exploring node: ftWorth, depth: 5, f_limit: 2734.401015951667
+Exploring node: wichita, depth: 4, f_limit: 3097.415470326184
+Neighbor: denver, g(n): 1594.0, h(n): 990.6170085100302, f(n): 2584.6170085100302
+Neighbor: omaha, g(n): 1406.0, h(n): 1645.0988105615515, f(n): 3051.0988105615515
+Exploring node: denver, depth: 5, f_limit: 3051.0988105615515
+Neighbor: dallas, g(n): 2386.0, h(n): 1311.6004429119898, f(n): 3697.60044291199
+Neighbor: provo, g(n): 2060.0, h(n): 895.3245160904029, f(n): 2955.324516090403
+Neighbor: santaFe, g(n): 1980.0, h(n): 596.8855883933252, f(n): 2576.885588393325
+Exploring node: santaFe, depth: 6, f_limit: 2955.324516090403
+Neighbor: elPaso, g(n): 2308.0, h(n): 426.40101595166715, f(n): 2734.401015951667
+Exploring node: elPaso, depth: 7, f_limit: 2955.324516090403
+Neighbor: sanAntonio, g(n): 2888.0, h(n): 1212.7849254220268, f(n): 4100.784925422027
+Neighbor: tucson, g(n): 2628.0, h(n): 0.0, f(n): 2628.0
+Exploring node: tucson, depth: 8, f_limit: 2955.324516090403
+Exploring node: cleveland, depth: 0, f_limit: inf
+Neighbor: buffalo, g(n): 191.0, h(n): 2906.415470326184, f(n): 3097.415470326184
+Neighbor: philadelphia, g(n): 476.0, h(n): 3054.7981718168244, f(n): 3530.7981718168244
+Neighbor: dayton, g(n): 214.0, h(n): 2450.284832709985, f(n): 2664.284832709985
+Exploring node: dayton, depth: 1, f_limit: 3097.415470326184
+Neighbor: indianapolis, g(n): 379.0, h(n): 2304.0427903604973, f(n): 2683.0427903604973
+Exploring node: indianapolis, depth: 2, f_limit: 3097.415470326184
+Neighbor: kansasCity, g(n): 881.0, h(n): 1638.7282416599137, f(n): 2519.7282416599137
+Exploring node: kansasCity, depth: 3, f_limit: 3097.415470326184
+Neighbor: tulsa, g(n): 1130.0, h(n): 1427.1018852523434, f(n): 2557.1018852523434
+Neighbor: wichita, g(n): 1071.0, h(n): 1364.8986496200114, f(n): 2435.8986496200114
+Exploring node: wichita, depth: 4, f_limit: 2557.1018852523434
+Neighbor: denver, g(n): 1594.0, h(n): 990.6170085100302, f(n): 2584.6170085100302
+Neighbor: omaha, g(n): 1406.0, h(n): 1645.0988105615515, f(n): 3051.0988105615515
+Exploring node: tulsa, depth: 4, f_limit: 2584.6170085100302
+Neighbor: ftWorth, g(n): 1444.0, h(n): 1262.7629739245394, f(n): 2706.7629739245394
+Neighbor: memphis, g(n): 1543.0, h(n): 1918.1568226624936, f(n): 3461.1568226624936
+Exploring node: wichita, depth: 4, f_limit: 2706.7629739245394
+Neighbor: denver, g(n): 1594.0, h(n): 990.6170085100302, f(n): 2584.6170085100302
+Neighbor: omaha, g(n): 1406.0, h(n): 1645.0988105615515, f(n): 3051.0988105615515
+Exploring node: denver, depth: 5, f_limit: 2706.7629739245394
+Neighbor: dallas, g(n): 2386.0, h(n): 1311.6004429119898, f(n): 3697.60044291199
+Neighbor: provo, g(n): 2060.0, h(n): 895.3245160904029, f(n): 2955.324516090403
+Neighbor: santaFe, g(n): 1980.0, h(n): 596.8855883933252, f(n): 2576.885588393325
+Exploring node: santaFe, depth: 6, f_limit: 2706.7629739245394
+Neighbor: elPaso, g(n): 2308.0, h(n): 426.40101595166715, f(n): 2734.401015951667
+Exploring node: tulsa, depth: 4, f_limit: 2734.401015951667
+Neighbor: ftWorth, g(n): 1444.0, h(n): 1262.7629739245394, f(n): 2706.7629739245394
+Neighbor: memphis, g(n): 1543.0, h(n): 1918.1568226624936, f(n): 3461.1568226624936
+Exploring node: ftWorth, depth: 5, f_limit: 2734.401015951667
+Exploring node: wichita, depth: 4, f_limit: 3097.415470326184
+Neighbor: denver, g(n): 1594.0, h(n): 990.6170085100302, f(n): 2584.6170085100302
+Neighbor: omaha, g(n): 1406.0, h(n): 1645.0988105615515, f(n): 3051.0988105615515
+Exploring node: denver, depth: 5, f_limit: 3051.0988105615515
+Neighbor: dallas, g(n): 2386.0, h(n): 1311.6004429119898, f(n): 3697.60044291199
+Neighbor: provo, g(n): 2060.0, h(n): 895.3245160904029, f(n): 2955.324516090403
+Neighbor: santaFe, g(n): 1980.0, h(n): 596.8855883933252, f(n): 2576.885588393325
+Exploring node: santaFe, depth: 6, f_limit: 2955.324516090403
+Neighbor: elPaso, g(n): 2308.0, h(n): 426.40101595166715, f(n): 2734.401015951667
+Exploring node: elPaso, depth: 7, f_limit: 2955.324516090403
+Neighbor: sanAntonio, g(n): 2888.0, h(n): 1212.7849254220268, f(n): 4100.784925422027
+Neighbor: tucson, g(n): 2628.0, h(n): 0.0, f(n): 2628.0
+Exploring node: tucson, depth: 8, f_limit: 2955.324516090403
